@@ -24,11 +24,6 @@ pipeline {
               
         }
         
-        stage('Deploy') {
-            steps {
-               
-                sh 'cp index.html /path/to/deployment/folder'
-                
-        }
+        
     }
 }
