@@ -2,22 +2,27 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') {
+        stage('Clone') {
             steps {
-                // Add your build steps here
+               git 'https://github.com/ThienNoob/test-jenkins.git'
             }
         }
+        // stage('Build') {
+        //     steps {
+        //         // Add your build steps here
+        //     }
+        // }
         
-        stage('Test') {
-            steps {
-                // Add your test steps here
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         // Add your test steps here
+        //     }
+        // }
         
-        stage('Deploy') {
-            steps {
-                // Add your deployment steps here
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //         // Add your deployment steps here
+        //     }
+        // }
     }
 }
