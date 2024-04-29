@@ -10,18 +10,19 @@ pipeline {
         
         stage('Build') {
             steps {
-                // Thực hiện build ở đây, ví dụ:
-                sh 'npm install' // Nếu sử dụng npm
-                sh 'npm run build' // Nếu sử dụng npm
-                // Hoặc thực hiện bất kỳ lệnh nào để build file index.html
+                // Đây là nơi để xây dựng (build) file index.html.
+                // Ví dụ: có thể sử dụng các công cụ như npm, yarn, gulp, webpack, etc.
+                sh 'npm install' // Ví dụ: cài đặt các gói npm
+                sh 'npm run build' // Ví dụ: thực thi lệnh build
             }
         }
         
         stage('Test') {
             steps {
-               
-                sh 'npm test' // Nếu sử dụng npm
-              
+                // Đây là nơi để chạy các bước kiểm thử.
+                // Ví dụ: có thể sử dụng các công cụ như Jest, Mocha, Selenium, etc.
+                sh 'npm test' // Ví dụ: chạy các bài kiểm thử
+            }
         }
         
         
