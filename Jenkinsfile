@@ -4,11 +4,10 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/ThienNoob/test-jenkins.git'
+                git branch: 'main', url: 'https://github.com/ThienNoob/test-jenkins.git'
             }
         }
         
-        
-        
+        // Thêm các giai đoạn và bước khác ở đây nếu cần
     }
 }
