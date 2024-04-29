@@ -10,8 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                // Đây là nơi để xây dựng (build) file index.html.
-                // Ví dụ: có thể sử dụng các công cụ như npm, yarn, gulp, webpack, etc.
+               
                 sh 'npm install' // Ví dụ: cài đặt các gói npm
                 sh 'npm run build' // Ví dụ: thực thi lệnh build
             }
