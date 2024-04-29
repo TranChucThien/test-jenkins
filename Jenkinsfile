@@ -19,8 +19,7 @@ pipeline {
         
         stage('Test') {
             steps {
-                // Đây là nơi để chạy các bước kiểm thử.
-                // Ví dụ: có thể sử dụng các công cụ như Jest, Mocha, Selenium, etc.
+               
                 sh 'npm test' // Ví dụ: chạy các bài kiểm thử
             }
         }
